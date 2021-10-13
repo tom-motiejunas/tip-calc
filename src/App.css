@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+:root {
+  --primary-color: hsl(172, 67%, 45%);
+
+  /* Neutral colors */
+  --darkest-color: hsl(183, 100%, 15%);
+  --darker-color: hsl(186, 14%, 43%);
+  --dark-color: hsl(184, 14%, 56%);
+  --lighter-color: hsl(189, 41%, 97%);
+  --light-color: hsl(185, 41%, 84%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.App {
+  background-color: var(--light-color);
+  height: 100vh;
+  display: grid;
+}
+.App .logo {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.App main {
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  max-width: 1000px;
+  height: 500px;
+  border-radius: 15px;
+}
+.App main section {
+  flex: 1;
+}
+.App form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.App form .form-box {
+  display: flex;
+  flex-direction: column;
+}
+.form-box div {
+  display: flex;
+}
+.form-box div span {
+  color: red;
+  flex: 1;
+  text-align: end;
+}
+.App form label {
+  color: var(--darker-color);
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+.App form input {
+  padding: 1rem;
+  border: none;
+  text-align: end;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  background-color: var(--lighter-color);
+  flex: 1;
+  font-size: 1.3rem;
+  height: 50px;
+}
+.App form input:focus {
+  outline: none;
+}
+.input {
+  background-color: var(--lighter-color);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  display: flex;
+  border-radius: 5px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    height: auto;
+  }
+  .App header {
+    margin: 3rem 0;
+  }
+  .App main {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+  }
+}

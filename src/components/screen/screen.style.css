@@ -1,0 +1,63 @@
+.screen {
+  background-color: var(--darkest-color);
+  margin-left: 3rem;
+  border-radius: 12px;
+  display: grid;
+  align-items: center;
+  padding: 2rem;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.screen > div {
+  display: flex;
+  align-self: start;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.screen .info {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.screen .info h2 {
+  color: #fff;
+}
+.screen .info span {
+  color: var(--darker-color);
+  text-align: start;
+  width: 100%;
+}
+.money {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: end;
+  align-self: flex-end;
+  width: 275px;
+}
+.reset-btn {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--darkest-color);
+  font-weight: 700;
+}
+.disable {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+@media only screen and (max-width: 900px) {
+  .screen {
+    margin: 2rem 0;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .money {
+    width: auto;
+    font-size: 2rem;
+  }
+}
