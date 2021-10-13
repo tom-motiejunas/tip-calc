@@ -82,7 +82,7 @@ function App() {
             <form action="#">
               <div className="form-box bill">
                 <div>
-                  <label htmlFor="bill-input">Bill</label>
+                  <span className="label">Bill</span>
                   {zeroBill ? <span>Can't be zero</span> : null}
                 </div>
                 <div className="input">
@@ -100,7 +100,6 @@ function App() {
                     type="number"
                     name="bill-input"
                     placeholder="0"
-                    pattern="[0-9][.]*"
                     onKeyPress={(e) => validationBill(e)}
                     onChange={changeBill}
                     onFocus={(e) => addOutline(e)}
@@ -112,7 +111,7 @@ function App() {
               <TipSelect setTip={setTip}></TipSelect>
               <div className="form-box people">
                 <div>
-                  <label htmlFor="num-people">Number of People</label>
+                  <span className="label">Number of People</span>
                   {zeroPeople ? <span>Can't be zero</span> : null}
                 </div>
                 <div className="input">
@@ -128,7 +127,6 @@ function App() {
                   </svg>
                   <input
                     type="number"
-                    pattern="[0-9]*"
                     name="people-input"
                     className="people-input"
                     placeholder="0"

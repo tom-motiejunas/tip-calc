@@ -77,8 +77,7 @@ export const TipSelect: React.FC<Props> = ({ setTip }) => {
         <input
           type="number"
           ref={customTipField}
-          name=""
-          id=""
+          name="custom-tip-input"
           placeholder="Custom"
           onChange={(e) => customTip(e)}
         />

@@ -52,6 +52,12 @@
 .form-box div {
   display: flex;
 }
+.form-box div .label {
+  color: var(--darker-color);
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  text-align: start;
+}
 .form-box div span {
   color: red;
   flex: 1;
